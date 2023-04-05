@@ -1,38 +1,38 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'Example',
 
-  origin: 'https://astrowind.vercel.app',
-  basePathname: '/',
-  trailingSlash: false,
+  origin: 'https://patchworkperspective.netlify.app',
+  basePathname: '/', // Change this if you need to deploy to Github Pages, for example
+  trailingSlash: false, // Generate permalinks with or without "/" at the end
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
-  description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
-  defaultImage: defaultImage,
+  title: 'Example - This is the homepage title of Example', // Default seo title
+  description: 'This is the homepage description of Example', // Default seo description
+  defaultImage: defaultImage, // Default seo image
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: 'en',
-  textDirection: 'ltr',
+  language: 'en', // Default language
+  textDirection: 'ltr', // Default html text direction
 
   dateFormatter: new Intl.DateTimeFormat('en', {
+    // Date format
     year: 'numeric',
     month: 'short',
     day: 'numeric',
     timeZone: 'UTC',
   }),
 
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+  googleAnalyticsId: false, // Or "G-XXXXXXXXXX",
+  googleSiteVerificationId: false, // Or some value,
 
   blog: {
     disabled: false,
     postsPerPage: 4,
 
     post: {
-      permalink: '/%slug%', // Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/%slug%', // variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       noindex: false,
       disabled: false,
     },
